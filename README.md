@@ -21,7 +21,8 @@ This Pterodactyl egg allows you to run a **SCUM dedicated server** (Windows-base
 ## 📌 Requirements
 
 > 🛠️ RAM: **MIN 14GB**.  
-> 🛠️ STORAGE: **MIN 15GB**.  
+> 🛠️ STORAGE: **MIN 15GB**.
+> 🛠️ The response port used for client connections is always the defined port **+2**. 
 ---
 
 ## 🚀 Features
