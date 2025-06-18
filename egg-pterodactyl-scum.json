@@ -1,13 +1,11 @@
 {
-    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
     "meta": {
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2025-02-09T10:38:17-05:00",
     "name": "Scum",
-    "author": "brycea@terrahost.cloud",
-    "description": "Just Scum",
+    "author": "woffi",
+    "description": "Traverse punishing environments, looting, crafting and evading the constant threats to your life. The unprecedented levels of character customization and progression are your ultimate tools for survival.",
     "features": [
         "steam_disk_space"
     ],
@@ -15,12 +13,12 @@
         "ghcr.io\/parkervcp\/yolks:wine_latest": "ghcr.io\/parkervcp\/yolks:wine_latest"
     },
     "file_denylist": [],
-    "startup": "WINEDLLOVERRIDES=mmdevapi=d xvfb-run --auto-servernum wine64 \/home\/container\/SCUM\/Binaries\/Win64\/SCUMServer.exe -port={{SERVER_PORT}} -log",
+    "startup": "bash -c 'WINEDLLOVERRIDES=mmdevapi=d xvfb-run --auto-servernum wine64 /home/container/SCUM/Binaries/Win64/SCUMServer.exe -port={{SERVER_PORT}} -log -nobattleye & pid=$!; trap \"kill -SIGINT $pid; wait $pid; exit 0\" SIGINT SIGTERM; wait $pid'",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"Started SourceServerQueries\"\r\n}",
         "logs": "{}",
-        "stop": "^^C"
+        "stop": "^C"
     },
     "scripts": {
         "installation": {
