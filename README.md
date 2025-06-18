@@ -11,7 +11,9 @@ This Pterodactyl egg allows you to run a **SCUM dedicated server** (Windows-base
 
 > 🛠️ This setup is **very basic and still in early development**.  
 > You may encounter bugs, missing features, or compatibility issues (especially with BattlEye or anti-cheat modules).
+>
 > If you have dll problem, just delete .wine folder and restart the server 2 time
+>
 > If the server stuck in startup after the installation, restart the server
 
 ---
