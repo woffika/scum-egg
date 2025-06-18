@@ -14,6 +14,12 @@ This Pterodactyl egg allows you to run a **SCUM dedicated server** (Windows-base
 
 ---
 
+## 📌 Requirements
+
+> 🛠️ RAM: **MIN 14GB**.  
+> 🛠️ STORAGE: **MIN 15GB**.  
+---
+
 ## 🚀 Features
 
 - Basic SCUM server startup under Wine
